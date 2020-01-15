@@ -5,4 +5,4 @@ a web scraper for a business game that we're playing in energy markets lecture a
 npm install
 
 ## run 
-node scrape.js <password> [<email>] [<game_id>]
+node scrape.js \<password\> [\<email\>] [\<game_id\>]
