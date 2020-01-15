@@ -2,9 +2,6 @@ function scrape_merit_order($) {
   let dataScript = $('h2:contains(Merit order)').siblings('script')[0].children[0].data
 
   let variables = {}
-  
-
-  let i = 0
 
   dataScript
     .slice(0, dataScript.lastIndexOf('}') + 1)
@@ -13,7 +10,6 @@ function scrape_merit_order($) {
     .forEach(datasetString => {
       datasetString = datasetString.replace(/'/g, '"')
       datasetString = datasetString.replace(/([^ :]*):/g, '"$1":')
-      console.log(i++, datasetString) 
       let dataset = JSON.parse(datasetString)
       variables[dataset.label] = {
         capacity_MW: dataset.data[1].x - dataset.data[0].x,
@@ -21,7 +17,7 @@ function scrape_merit_order($) {
       }
     })
 
-  console.log(variables) 
+  return variables
 }
 
 module.exports = scrape_merit_order
