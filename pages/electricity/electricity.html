@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <title>TUM - Energy Challenge</title>
+                <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="robots" content="noindex, nofollow">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/icons/style.css">
+
+        <link rel="stylesheet" href="/js/slick/slick.css">
+        <link rel="stylesheet" href="/js/selectize/css/selectize.css">
+        <link rel="stylesheet" href="/js/pickadate/compressed/themes/default.css">
+        <link rel="stylesheet" href="/js/pickadate/compressed/themes/default.date.css">
+        <link rel="stylesheet" href="/js/pickadate/compressed/themes/default.time.css">
+
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/additional-styles.css">
+        <!-- <link rel="stylesheet" href="css/styles.css"> -->
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic' rel='stylesheet' type='text/css'>
+        
+            </head>
+
+    
+            <body id="overwrite" class="logged-in">
+        <div class="user-line">
+	<div class="container">
+		<div class="admin-navigation">
+	    	<ul>
+	        		        	<!-- <li class="has-submenu">
+	        		<a class="" href="/dahboard">Datensätze</a>
+	        		<ul class="sub-menu">
+	        			<li><a class="" href="/rounds">Spielrunden</a></li>
+	        		</ul>
+	        	</li> -->
+	    		<li><a class="" href="/profil">Profile</a></li>	        	
+	        	<li>
+	        		<a href="/logout">Logout</a>
+	        	</li>
+		    </ul>
+		</div>
+		<div class="logged-in-as">
+			Logged in as: Group  X (Group X)
+		</div>
+	</div>
+</div>    
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="body-container">
+            <!-- HEADER -->
+            <header class="header">
+                <div class="container">
+                    <a href="/"><img class="logo" src="/img/logo.png" height="63" width="195" /></a>
+                    
+                    <div class="header-right">
+                                                Game: <strong>WS2019_EM1_Demo</strong><br>
+<!-- im Szenario <strong>EMI_WS2018_Nuclear Phase Out --- DO NOT DELETE - Copy of 27 - 17 players - Copy of 38 - auction variant - DEMO</strong><br> -->
+<small>Round 1 / 2</small>                    </div>
+                </div>
+            </header>
+
+                        <div class="navigation-line">
+    <div class="container">
+        <ul class="game-navigation">
+            <li class="has-submenu">
+                <a class="" href="/games/397/play">Dashboard</a>
+            </li>
+            <li class="has-submenu">
+                <a class="" href="/games/397/actions">Actions</a>
+                <ul class="sub-menu">
+                    <li>
+                        <a class="" href="/games/397/auctions">Buy objects</a>
+                    </li>
+                    <li>
+                        <a class="" href="/games/397/objects">Sell objects</a>
+                    </li>
+                    <li>
+                        <a class="" href="/games/397/objects">Activate / deactivate objects</a>
+                    </li>
+                    <li>
+                        <a class="" href="/games/397/loans">Get loans</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a class="" href="/games/397/balance">Financial Statements</a>
+            </li>
+            <li class="has-submenu">
+                <a class="" href="/games/397/news">News</a>
+            </li>
+            <li class="has-submenu">
+                <a class="" href="/games/397/stats">Statistics</a>
+                <ul class="sub-menu">
+                                                            <li>
+                        <a class="active" href="/games/397/electricity">Electricity market</a>
+                    </li>
+                    <li>
+                        <a class="" href="/games/397/financial">Financial market</a>
+                    </li>
+                    <li>
+                        <a class="" href="/games/397/market-plants">Power plants</a>
+                    </li>
+                    <li>
+                        <a class="" href="/games/397/ranking">Ranking & competitors</a>
+                    </li>                    
+                </ul>
+            </li>
+            <!-- <li class="has-submenu">
+                <a class="" href="/games/397/auctions">Auctions</a>
+            </li> -->
+            <!-- <li class="has-submenu">
+                <a class="" href="/games/397/stats">Statistics</a>
+            </li> -->
+            <!-- <li class="has-submenu">
+                <a class="" href="/games/397/loans">Loans</a>
+            </li> -->
+            <!-- <li class="has-submenu">
+                <a class="" href="/games/397/balance/2">Vorläufige Bilanz</a>
+            </li> -->
+        </ul>
+    </div>
+</div>
+            <div class="flash-messages-container">
+                            <div class="flash-message">
+                    <div class="flash-message-close">
+                        <span class="icon-close">X</span>
+                    </div>
+                    <p>You've been logged in successfully.</p>
+                </div>
+                        </div>
+
+            <section id="content-row" class="content-row">
+                <div class="container">
+                    
+	<div class="row">
+		<div class="col-md-9">
+	    	    <h1>Electricity market</h1>
+        <div class="row">
+        <div class="col-md-8">
+            <p><strong>All values are from round 0.</strong></p>
+        </div>
+        <div class="col-md-4">
+            Summaries for:
+            <form action="/games/397/electricity" method="GET">
+                <select name="round">
+                    <option value="1">Current round</option>
+                                    </select>
+                <button>Show</button>
+            </form> 
+        </div>
+    </div>
+    
+    <hr>
+
+    
+    <div class="row">
+        <div class="col-lg-6 col-md-6">
+            <h2>Merit order</h2>
+            
+            <p>Marginal costs in €/MWh against production capacity in MW</p>
+            
+            
+            <script>
+                var datasets = [];
+
+                
+                                                                                    var dataset_pp2016_wind_offshore = {
+                            label: 'pp2016_wind_offshore',
+                            strokeColor: '#F16220',
+                            pointColor: '#F16220',
+                            pointStrokeColor: '#fff',
+                            data: [
+                                { x: 0, y: 0 }, 
+                                { x: 5600, y: 0 }
+                            ]
+                        }
+                        
+                        datasets.push(dataset_pp2016_wind_offshore);
+                                                                                                                                                                                                                    var dataset_pp2016_solar_pv = {
+                            label: 'pp2016_solar_pv',
+                            strokeColor: '#FF00FF',
+                            pointColor: '#FF00FF',
+                            pointStrokeColor: '#fff',
+                            data: [
+                                { x: 5600, y: 0 }, 
+                                { x: 19600, y: 0 }
+                            ]
+                        }
+                        
+                        datasets.push(dataset_pp2016_solar_pv);
+                                                                                                                                                                                var dataset_pp2016_nuclear = {
+                            label: 'pp2016_nuclear',
+                            strokeColor: '#00FFFF',
+                            pointColor: '#00FFFF',
+                            pointStrokeColor: '#fff',
+                            data: [
+                                { x: 19600, y: 12.024886021505 }, 
+                                { x: 58800, y: 12.024886021505 }
+                            ]
+                        }
+                        
+                        datasets.push(dataset_pp2016_nuclear);
+                                                                                                                                                                                                                    var dataset_pp2016_CCGT = {
+                            label: 'pp2016_CCGT',
+                            strokeColor: '#FFFF00',
+                            pointColor: '#FFFF00',
+                            pointStrokeColor: '#fff',
+                            data: [
+                                { x: 58800, y: 14.569848181711 }, 
+                                { x: 92400, y: 14.569848181711 }
+                            ]
+                        }
+                        
+                        datasets.push(dataset_pp2016_CCGT);
+                                                                                                                                                                                var dataset_pp2016_gas_turbine = {
+                            label: 'pp2016_gas_turbine',
+                            strokeColor: '#0000FF',
+                            pointColor: '#0000FF',
+                            pointStrokeColor: '#fff',
+                            data: [
+                                { x: 92400, y: 23.473644292757 }, 
+                                { x: 137200, y: 23.473644292757 }
+                            ]
+                        }
+                        
+                        datasets.push(dataset_pp2016_gas_turbine);
+                                                                                                                                            var dataset_pp2016_coal = {
+                            label: 'pp2016_coal',
+                            strokeColor: '#00FF00',
+                            pointColor: '#00FF00',
+                            pointStrokeColor: '#fff',
+                            data: [
+                                { x: 137200, y: 34.970962698235 }, 
+                                { x: 170800, y: 34.970962698235 }
+                            ]
+                        }
+                        
+                        datasets.push(dataset_pp2016_coal);
+                                                                                                                                                                                                                                                                        </script>
+
+            <div class="sources_diagram">
+                <canvas id="diagram_marginal_costs" width="500" height="200"></canvas>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h2>Summary statistics</h2>
+
+            <table class="table-striped">
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td>Last round</td>
+                        <td class="hidden">Before</td>
+                        <td>Change</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Avg. electricity price</td>
+                        <td>21.14€/MWh</td>
+                        <td class="hidden">
+                             
+                                available from round 2 on 
+                                                    </td>
+                        <td>
+                             
+                                available from round 2 on 
+                                                    </td>
+                    </tr>
+                    <tr>
+                        <td>Total demand</td>
+                        <td>525,361,200.00 MWh</td>
+                        <td class="hidden">
+                             
+                                available from round 2 on 
+                                                    </td>
+                        <td>
+                             
+                                available from round 2 on 
+                                                    </td>
+                    </tr>
+                    <tr>
+                        <td>Total capacity</td>
+                        <td>1,496,208,000.00 MWh</td>
+                        <td class="hidden">
+                             
+                                available from round 2 on 
+                                                    </td>
+                        <td>
+                             
+                                available from round 2 on 
+                                                    </td>
+                    </tr>
+                    <tr>
+                        <td>Total production</td>
+                        <td>525,361,200.00 MWh</td>
+                        <td class="hidden">
+                             
+                                available from round 2 on 
+                                                    </td>
+                        <td>
+                             
+                                available from round 2 on 
+                                                    </td>
+                    </tr>
+                    <tr>
+                        <td>Own production</td>
+                        <td>37,525,800.00 MWh</td>
+                        <td class="hidden">
+                             
+                                available from round 2 on 
+                                                    </td>
+                        <td>
+                             
+                                available from round 2 on 
+                                                    </td> 
+                    </tr>
+                    <tr>
+                        <td>Market share</td>
+                                                <td>7.14 %</td>
+                        <td class="hidden">
+                             
+                                available from round 2 on 
+                                                    </td>
+                        <td>
+                             
+                                available from round 2 on 
+                                                    </td>
+                    </tr>
+                </tbody>
+            </table>         
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Daily electricity demand</h2>
+            
+            <p>Daily electricity demand in % relative to the daily average demand</p>
+            
+            
+            <p>Daily average electricity demand: 60000.00 MW</p>
+
+                        <script>
+                var demand = {"summer-week":["78","74","73","73","75","81","94","106","112","114","117","120","119","116","114","111","110","109","109","108","102","96","95","86"],"summer-weekend":["69","65","63","62","62","62","62","66","73","79","83","88","86","81","78","76","75","77","80","81","81","82","82","75"],"winter-week":["95","91","90","90","92","96","107","120","124","124","126","127","126","125","123","122","122","127","128","125","118","113","111","103"],"winter-weekend":["89","85","83","81","81","80","77","82","88","94","98","102","101","97","94","93","96","102","105","103","98","95","97","91"]};
+            </script>
+
+            <div class="sources_diagram">
+                <canvas id="diagram_demand" width="500" height="200"></canvas>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6">
+                            <script>
+                    var ppt = JSON.parse("{\"wind\":1576320,\"uranium\":8584800,\"gas\":26598180,\"solar\":766500}");
+                    var ppt_full = {"wind":22068480,"uranium":120187200,"gas":372374520,"solar":10731000};
+                </script>
+            
+            <h2>Total production by source</h2>
+            
+            <div class="plants_diagram">
+                <p>525,361,200.00 MWh</p>
+                <canvas id="diagram4" width="200" height="200"></canvas>
+            </div>
+        </div>        
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Daily electricity prices</h2>
+            
+            <p>Daily electricity prices in €/MWh</p>
+
+                        <script>
+                var eprices = {"summer-week":[14.569848181711,14.569848181711,14.569848181711,14.569848181711,14.569848181711,14.569848181711,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757],"summer-weekend":[14.569848181711,14.569848181711,14.569848181711,14.569848181711,14.569848181711,14.569848181711,14.569848181711,14.569848181711,14.569848181711,14.569848181711,14.569848181711,23.473644292757,14.569848181711,14.569848181711,14.569848181711,14.569848181711,14.569848181711,14.569848181711,14.569848181711,14.569848181711,14.569848181711,14.569848181711,14.569848181711,14.569848181711],"winter-week":[23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757],"winter-weekend":[23.473644292757,23.473644292757,14.569848181711,14.569848181711,14.569848181711,14.569848181711,14.569848181711,14.569848181711,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757,23.473644292757]};
+            </script>
+
+            <div class="sources_diagram">
+                <canvas id="diagram_price" width="500" height="200"></canvas>
+            </div>            
+        </div>
+        <div class="col-md-6">
+            <h2>Own production by source</h2>
+
+            <div class="plants_diagram">
+                <p>37,525,800.00 MWh</p>
+                <canvas id="diagram3" width="200" height="200"></canvas>
+            </div>          
+        </div>
+    </div>
+	    </div>
+		<div class="col-md-3">
+	    		    	<h1>News</h1>
+	    				
+			<div class="articles">
+		    			    </div>
+	    </div>
+	</div>
+
+</div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            
+        </footer>
+        </div><!-- End of body-container -->
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="//cdn.jsdelivr.net/jquery.slick/1.3.6/slick.min.js"></script>
+        <!-- Compressed Plugins -->
+        <script src="/js/handlebars.js"></script> 
+        <script src="/js/plugins.js"></script>
+        <!-- Slider -->
+        <script src="/js/slick/slick.js"></script>
+        <!-- LIST JS -->
+        <script src="/js/list.js"></script>
+        <!-- CHART JS -->
+        <script src="/js/Chart.js"></script>
+        <!-- Selectize -->
+        <script src="/js/selectize/js/standalone/selectize.min.js"></script>        
+        <!-- Pick A Date -->
+        <script src="/js/pickadate/compressed/picker.js"></script>
+        <script src="/js/pickadate/compressed/picker.date.js"></script>
+        <script src="/js/pickadate/compressed/picker.time.js"></script>
+        <script src="/js/pickadate/compressed/translations/de_DE.js"></script>
+        <!-- Custom Scripts -->
+        <script src="/js/main.js"></script>
+
+            <script>
+        $(document).on('ready', function() {
+            
+            function create_legend(data) {
+                var html = "<ul class='doughnut-legend'>";
+                $.each(data, function(index, value) {
+                    html += "<li><span style='background-color: " + value.color + "'></span>";
+                    html += value.label;
+                    html += "</li>";
+                });
+                html += "</ul>";
+
+                return html;
+            }
+
+            var source_array = ['coal', 'gas', 'uranium', 'solar', 'wind', 'lignite'];
+
+            var options = {
+                scaleShowGridLines : true,
+                scaleGridLineWidth : 1,
+                scaleShowHorizontalLines: true,
+                scaleShowVerticalLines: true,
+                bezierCurve : false,
+                pointDot : true,
+                pointDotRadius : 4,
+                pointDotStrokeWidth : 1,
+                pointHitDetectionRadius : 20,
+                datasetStroke : true,
+                datasetStrokeWidth : 2,
+                datasetFill : true,
+                legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+            }
+
+            var data = {
+                datasets: datasets
+            };
+
+            var ctx = document.getElementById("diagram_marginal_costs").getContext("2d");
+            var myScatterChart = new Chart(ctx).Scatter(data, options);           
+            var html = myScatterChart.generateLegend();
+            $("#diagram_marginal_costs").after(html);
+
+                            $.each(source_array, function(index, value) {
+                    if(ppt_full[value] == undefined) {
+                        ppt_full[value] = 0;
+                    }
+                });
+
+                var data_full_production = [
+                    {
+                        value: ppt_full['coal'],
+                        color:"#5B9BD5",
+                        highlight: "#8CBFEE",
+                        label: "Coal"
+                    },
+                    {
+                        value: ppt_full['gas'],
+                        color: "#A5A5A5",
+                        highlight: "#D3D3D3",
+                        label: "Gas"
+                    },
+                    {
+                        value: ppt_full['uranium'],
+                        color: "#FFC002",
+                        highlight: "#FDD251",
+                        label: "Uranium"
+                    },
+                    {
+                        value: ppt_full['solar'],
+                        color: "#4472C4",
+                        highlight: "#6993E0",
+                        label: "Solar"
+                    },
+                    {
+                        value: ppt_full['wind'],
+                        color: "#70AE47",
+                        highlight: "#99D96F",
+                        label: "Wind"
+                    }
+                ];
+
+                var data_full_production = [
+                    {
+                        value: ppt_full['coal'],
+                        color:"#5B9BD5",
+                        highlight: "#8CBFEE",
+                        label: "Coal"
+                    },
+                    {
+                        value: ppt_full['gas'],
+                        color: "#A5A5A5",
+                        highlight: "#D3D3D3",
+                        label: "Gas"
+                    },
+                    {
+                        value: ppt_full['uranium'],
+                        color: "#FFC002",
+                        highlight: "#FDD251",
+                        label: "Nuclear"
+                    },
+                    {
+                        value: ppt_full['solar'],
+                        color: "#4472C4",
+                        highlight: "#6993E0",
+                        label: "Solar"
+                    },
+                    {
+                        value: ppt_full['wind'],
+                        color: "#70AE47",
+                        highlight: "#99D96F",
+                        label: "Wind"
+                    },
+                    {
+                        value: ppt_full['lignite'],
+                        color: "#700047",
+                        highlight: "#99006F",
+                        label: "Lignite"
+                    }
+                ];
+
+                $.each(source_array, function(index, value) {
+                    if(ppt[value] == undefined) {
+                        ppt[value] = 0;
+                    }
+                });
+
+                var data_my_production = [
+                    {
+                        value: ppt['coal'],
+                        color:"#5B9BD5",
+                        highlight: "#8CBFEE",
+                        label: "Coal"
+                    },
+                    {
+                        value: ppt['gas'],
+                        color: "#A5A5A5",
+                        highlight: "#D3D3D3",
+                        label: "Gas"
+                    },
+                    {
+                        value: ppt['uranium'],
+                        color: "#FFC002",
+                        highlight: "#FDD251",
+                        label: "Uranium"
+                    },
+                    {
+                        value: ppt['solar'],
+                        color: "#4472C4",
+                        highlight: "#6993E0",
+                        label: "Solar"
+                    },
+                    {
+                        value: ppt['wind'],
+                        color: "#70AE47",
+                        highlight: "#99D96F",
+                        label: "Wind"
+                    },
+                    {
+                        value: ppt['lignite'],
+                        color: "#700047",
+                        highlight: "#99006F",
+                        label: "Lignite"
+                    }                    
+                ];
+            
+            /***********************************
+            Demand
+            ***********************************/
+
+            var data_demand = {
+                labels: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23"],
+                datasets: [
+                    {
+                        label: "Summer Weekday",
+                        fillColor: "rgba(220,220,220,0.2)",
+                        strokeColor: "rgba(220,220,220,1)",
+                        pointColor: "rgba(220,220,220,1)",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(220,220,220,1)",
+                        data: demand['summer-week']
+                    },
+                    {
+                        label: "Summer Weekend",
+                        fillColor: "rgba(220,100,220,0.2)",
+                        strokeColor: "rgba(220,100,220,1)",
+                        pointColor: "rgba(220,100,220,1)",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(220,100,220,1)",
+                        data: demand['summer-weekend']
+                    },
+                    {
+                        label: "Winter Weekday",
+                        fillColor: "rgba(100,220,220,0.2)",
+                        strokeColor: "rgba(100,220,220,1)",
+                        pointColor: "rgba(100,220,220,1)",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(100,220,220,1)",
+                        data: demand['winter-week']
+                    },
+                    {
+                        label: "Winter Weekend",
+                        fillColor: "rgba(220,220,100,0.2)",
+                        strokeColor: "rgba(220,220,100,1)",
+                        pointColor: "rgba(220,220,100,1)",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(220,220,100,1)",
+                        data: demand['winter-weekend']
+                    }
+                ]
+            };
+
+            /***********************************
+            EPrice
+            ***********************************/
+
+            var data_eprices = {
+                labels: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23"],
+                datasets: [
+                    {
+                        label: "Summer Weekday",
+                        fillColor: "rgba(220,220,220,0.2)",
+                        strokeColor: "rgba(220,220,220,1)",
+                        pointColor: "rgba(220,220,220,1)",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(220,220,220,1)",
+                        data: eprices['summer-week']
+                    },
+                    {
+                        label: "Summer Weekend",
+                        fillColor: "rgba(220,100,220,0.2)",
+                        strokeColor: "rgba(220,100,220,1)",
+                        pointColor: "rgba(220,100,220,1)",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(220,100,220,1)",
+                        data: eprices['summer-weekend']
+                    },
+                    {
+                        label: "Winter Weekday",
+                        fillColor: "rgba(100,220,220,0.2)",
+                        strokeColor: "rgba(100,220,220,1)",
+                        pointColor: "rgba(100,220,220,1)",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(100,220,220,1)",
+                        data: eprices['winter-week']
+                    },
+                    {
+                        label: "Winter Weekend",
+                        fillColor: "rgba(220,220,100,0.2)",
+                        strokeColor: "rgba(220,220,100,1)",
+                        pointColor: "rgba(220,220,100,1)",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(220,220,100,1)",
+                        data: eprices['winter-weekend']
+                    }
+                ]
+            };
+
+            var ctx = document.getElementById("diagram_demand").getContext("2d");
+            var demandChart2 = new Chart(ctx).Line(data_demand, options);                           
+            var html2 = demandChart2.generateLegend();
+            $("#diagram_demand").after(html2);
+
+            var ctx = document.getElementById("diagram3").getContext("2d");
+            var myDoughnutChart3 = new Chart(ctx).Doughnut(data_my_production, options);           
+            var data_html = create_legend(data_my_production);
+            $("#diagram3").after(data_html);            
+
+            var ctx = document.getElementById("diagram4").getContext("2d");
+            var myDoughnutChart4 = new Chart(ctx).Doughnut(data_full_production, options); 
+            // var html4 = myDoughnutChart4.generateLegend();
+            // console.log(html4);
+            var data_html = create_legend(data_full_production);
+            $("#diagram4").after(data_html);
+
+            var ctx5 = document.getElementById("diagram_price").getContext("2d");
+            var demandChart5 = new Chart(ctx5).Line(data_eprices, options);
+            var html5 = demandChart5.generateLegend();
+            $("#diagram_price").after(html5);            
+        });
+    </script>    
+
+        
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
