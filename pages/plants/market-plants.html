@@ -1,0 +1,3006 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <title>TUM - Energy Challenge</title>
+                <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="robots" content="noindex, nofollow">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/icons/style.css">
+
+        <link rel="stylesheet" href="/js/slick/slick.css">
+        <link rel="stylesheet" href="/js/selectize/css/selectize.css">
+        <link rel="stylesheet" href="/js/pickadate/compressed/themes/default.css">
+        <link rel="stylesheet" href="/js/pickadate/compressed/themes/default.date.css">
+        <link rel="stylesheet" href="/js/pickadate/compressed/themes/default.time.css">
+
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/additional-styles.css">
+        <!-- <link rel="stylesheet" href="css/styles.css"> -->
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic' rel='stylesheet' type='text/css'>
+        
+            </head>
+
+    
+            <body id="overwrite" class="logged-in">
+        <div class="user-line">
+	<div class="container">
+		<div class="admin-navigation">
+	    	<ul>
+	        		        	<!-- <li class="has-submenu">
+	        		<a class="" href="/dahboard">Datensätze</a>
+	        		<ul class="sub-menu">
+	        			<li><a class="" href="/rounds">Spielrunden</a></li>
+	        		</ul>
+	        	</li> -->
+	    		<li><a class="" href="/profil">Profile</a></li>	        	
+	        	<li>
+	        		<a href="/logout">Logout</a>
+	        	</li>
+		    </ul>
+		</div>
+		<div class="logged-in-as">
+			Logged in as: Group  X (Group X)
+		</div>
+	</div>
+</div>    
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="body-container">
+            <!-- HEADER -->
+            <header class="header">
+                <div class="container">
+                    <a href="/"><img class="logo" src="/img/logo.png" height="63" width="195" /></a>
+                    
+                    <div class="header-right">
+                                                Game: <strong>WS2019_EM1</strong><br>
+<!-- im Szenario <strong>EMI_WS2018_Nuclear Phase Out --- DO NOT DELETE - Copy of 27 - 17 players 7 - Copy of 38 - auction variant</strong><br> -->
+<small>Round 6 / 11</small>                    </div>
+                </div>
+            </header>
+
+                        <div class="navigation-line">
+    <div class="container">
+        <ul class="game-navigation">
+            <li class="has-submenu">
+                <a class="" href="/games/398/play">Dashboard</a>
+            </li>
+            <li class="has-submenu">
+                <a class="" href="/games/398/actions">Actions</a>
+                <ul class="sub-menu">
+                    <li>
+                        <a class="" href="/games/398/auctions">Buy objects</a>
+                    </li>
+                    <li>
+                        <a class="" href="/games/398/objects">Sell objects</a>
+                    </li>
+                    <li>
+                        <a class="" href="/games/398/objects">Activate / deactivate objects</a>
+                    </li>
+                    <li>
+                        <a class="" href="/games/398/loans">Get loans</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a class="" href="/games/398/balance">Financial Statements</a>
+            </li>
+            <li class="has-submenu">
+                <a class="" href="/games/398/news">News</a>
+            </li>
+            <li class="has-submenu">
+                <a class="" href="/games/398/stats">Statistics</a>
+                <ul class="sub-menu">
+                                                            <li>
+                        <a class="" href="/games/398/electricity">Electricity market</a>
+                    </li>
+                    <li>
+                        <a class="" href="/games/398/financial">Financial market</a>
+                    </li>
+                    <li>
+                        <a class="active" href="/games/398/market-plants">Power plants</a>
+                    </li>
+                    <li>
+                        <a class="" href="/games/398/ranking">Ranking & competitors</a>
+                    </li>                    
+                </ul>
+            </li>
+            <!-- <li class="has-submenu">
+                <a class="" href="/games/398/auctions">Auctions</a>
+            </li> -->
+            <!-- <li class="has-submenu">
+                <a class="" href="/games/398/stats">Statistics</a>
+            </li> -->
+            <!-- <li class="has-submenu">
+                <a class="" href="/games/398/loans">Loans</a>
+            </li> -->
+            <!-- <li class="has-submenu">
+                <a class="" href="/games/398/balance/7">Vorläufige Bilanz</a>
+            </li> -->
+        </ul>
+    </div>
+</div>
+            <div class="flash-messages-container">
+                        </div>
+
+            <section id="content-row" class="content-row">
+                <div class="container">
+                    
+	<div class="row">
+		<div class="col-md-9">
+	    	    <h1>Power plants</h1>
+
+    <div id="plants-list">
+        <div class="form-elem" style="margin-bottom: 30px;">
+            <label for="search">Search list:</label>
+            <input class="search form-elem" name="search" placeholder="" />
+        </div>        
+		<table class="table-striped">
+			<thead>
+				<tr>
+					<th class="sort" data-sort="type">Type</th>
+					<th class="sort" data-sort="owner">User</th>
+					<th class="sort" data-sort="status">Status</th>
+					<th class="sort textright" data-sort="capacity">Capacity</th>
+					<th class="sort textright" data-sort="fixed_costs">Fixed costs in €</th>
+				</tr>
+			</thead>
+            <tbody class="list">
+            	                    <tr>
+                        <td class="type">(47603) Offshore Windfarm (wind)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47755) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47795) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47812) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47813) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47814) Lignite-fired Power Plant (lignite)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1000 MW</td>
+                        <td class="fixed_costs textright">90.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47816) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47817) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47818) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47819) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47820) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47821) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47822) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47823) Offshore Windfarm (wind)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47824) Offshore Windfarm (wind)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47825) Offshore Windfarm (wind)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47826) Offshore Windfarm (wind)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47827) Solar PV farm (solar)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47828) Solar PV farm (solar)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47829) Solar PV farm (solar)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47830) Solar PV farm (solar)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47831) Solar PV farm (solar)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47853) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47959) Solar PV farm (solar)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47960) Solar PV farm (solar)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47961) Solar PV farm (solar)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47962) Offshore Windfarm (wind)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">building</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47978) Offshore Windfarm (wind)</td>
+                        <td class="owner">Group X</td>
+                        <td class="status">building</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47592) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">BLMNK</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47593) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">BLMNK</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47594) Lignite-fired Power Plant (lignite)</td>
+                        <td class="owner">BLMNK</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1000 MW</td>
+                        <td class="fixed_costs textright">90.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47595) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">BLMNK</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47596) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">BLMNK</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47597) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">BLMNK</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47598) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">BLMNK</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47599) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">BLMNK</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47600) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">BLMNK</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47601) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">BLMNK</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47602) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">BLMNK</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47604) Offshore Windfarm (wind)</td>
+                        <td class="owner">BLMNK</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47605) Offshore Windfarm (wind)</td>
+                        <td class="owner">BLMNK</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47606) Offshore Windfarm (wind)</td>
+                        <td class="owner">BLMNK</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47607) Solar PV farm (solar)</td>
+                        <td class="owner">BLMNK</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47608) Solar PV farm (solar)</td>
+                        <td class="owner">BLMNK</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47609) Solar PV farm (solar)</td>
+                        <td class="owner">BLMNK</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47610) Solar PV farm (solar)</td>
+                        <td class="owner">BLMNK</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47611) Solar PV farm (solar)</td>
+                        <td class="owner">BLMNK</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47938) Solar PV farm (solar)</td>
+                        <td class="owner">BLMNK</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47939) Solar PV farm (solar)</td>
+                        <td class="owner">BLMNK</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47950) Solar PV farm (solar)</td>
+                        <td class="owner">BLMNK</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47951) Solar PV farm (solar)</td>
+                        <td class="owner">BLMNK</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47612) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">MVPL</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47613) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">MVPL</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47614) Lignite-fired Power Plant (lignite)</td>
+                        <td class="owner">MVPL</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1000 MW</td>
+                        <td class="fixed_costs textright">90.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47615) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">MVPL</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47616) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">MVPL</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47617) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">MVPL</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47618) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">MVPL</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47619) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">MVPL</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47620) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">MVPL</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47621) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">MVPL</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47622) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">MVPL</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47623) Offshore Windfarm (wind)</td>
+                        <td class="owner">MVPL</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47624) Offshore Windfarm (wind)</td>
+                        <td class="owner">MVPL</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47625) Offshore Windfarm (wind)</td>
+                        <td class="owner">MVPL</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47626) Offshore Windfarm (wind)</td>
+                        <td class="owner">MVPL</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47627) Solar PV farm (solar)</td>
+                        <td class="owner">MVPL</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47628) Solar PV farm (solar)</td>
+                        <td class="owner">MVPL</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47629) Solar PV farm (solar)</td>
+                        <td class="owner">MVPL</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47630) Solar PV farm (solar)</td>
+                        <td class="owner">MVPL</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47631) Solar PV farm (solar)</td>
+                        <td class="owner">MVPL</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47633) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">ana.garcia</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47634) Lignite-fired Power Plant (lignite)</td>
+                        <td class="owner">ana.garcia</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1000 MW</td>
+                        <td class="fixed_costs textright">90.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47636) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">ana.garcia</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47637) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">ana.garcia</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47638) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">ana.garcia</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47641) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">ana.garcia</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47642) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">ana.garcia</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47643) Offshore Windfarm (wind)</td>
+                        <td class="owner">ana.garcia</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47644) Offshore Windfarm (wind)</td>
+                        <td class="owner">ana.garcia</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47645) Offshore Windfarm (wind)</td>
+                        <td class="owner">ana.garcia</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47646) Offshore Windfarm (wind)</td>
+                        <td class="owner">ana.garcia</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47647) Solar PV farm (solar)</td>
+                        <td class="owner">ana.garcia</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47648) Solar PV farm (solar)</td>
+                        <td class="owner">ana.garcia</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47649) Solar PV farm (solar)</td>
+                        <td class="owner">ana.garcia</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47650) Solar PV farm (solar)</td>
+                        <td class="owner">ana.garcia</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47651) Solar PV farm (solar)</td>
+                        <td class="owner">ana.garcia</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47697) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">ana.garcia</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47837) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">ana.garcia</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47855) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">ana.garcia</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47892) Solar PV farm (solar)</td>
+                        <td class="owner">ana.garcia</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47893) Lignite-fired Power Plant (lignite)</td>
+                        <td class="owner">ana.garcia</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1000 MW</td>
+                        <td class="fixed_costs textright">90.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47916) Offshore Windfarm (wind)</td>
+                        <td class="owner">ana.garcia</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47917) Offshore Windfarm (wind)</td>
+                        <td class="owner">ana.garcia</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47940) Solar PV farm (solar)</td>
+                        <td class="owner">ana.garcia</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47963) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">ana.garcia</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47964) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">ana.garcia</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47652) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">GroupP_EM1</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47653) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">GroupP_EM1</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47654) Lignite-fired Power Plant (lignite)</td>
+                        <td class="owner">GroupP_EM1</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1000 MW</td>
+                        <td class="fixed_costs textright">90.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47655) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">GroupP_EM1</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47656) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">GroupP_EM1</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47657) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">GroupP_EM1</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47658) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">GroupP_EM1</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47659) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">GroupP_EM1</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47660) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">GroupP_EM1</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47661) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">GroupP_EM1</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47662) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">GroupP_EM1</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47663) Offshore Windfarm (wind)</td>
+                        <td class="owner">GroupP_EM1</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47664) Offshore Windfarm (wind)</td>
+                        <td class="owner">GroupP_EM1</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47665) Offshore Windfarm (wind)</td>
+                        <td class="owner">GroupP_EM1</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47666) Offshore Windfarm (wind)</td>
+                        <td class="owner">GroupP_EM1</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47667) Solar PV farm (solar)</td>
+                        <td class="owner">GroupP_EM1</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47668) Solar PV farm (solar)</td>
+                        <td class="owner">GroupP_EM1</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47669) Solar PV farm (solar)</td>
+                        <td class="owner">GroupP_EM1</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47670) Solar PV farm (solar)</td>
+                        <td class="owner">GroupP_EM1</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47671) Solar PV farm (solar)</td>
+                        <td class="owner">GroupP_EM1</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47672) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">Group Y</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47673) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">Group Y</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47674) Lignite-fired Power Plant (lignite)</td>
+                        <td class="owner">Group Y</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1000 MW</td>
+                        <td class="fixed_costs textright">90.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47675) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">Group Y</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47676) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">Group Y</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47678) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">Group Y</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47679) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">Group Y</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47680) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">Group Y</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47681) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">Group Y</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47682) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">Group Y</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47683) Offshore Windfarm (wind)</td>
+                        <td class="owner">Group Y</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47684) Offshore Windfarm (wind)</td>
+                        <td class="owner">Group Y</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47685) Offshore Windfarm (wind)</td>
+                        <td class="owner">Group Y</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47686) Offshore Windfarm (wind)</td>
+                        <td class="owner">Group Y</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47687) Solar PV farm (solar)</td>
+                        <td class="owner">Group Y</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47688) Solar PV farm (solar)</td>
+                        <td class="owner">Group Y</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47689) Solar PV farm (solar)</td>
+                        <td class="owner">Group Y</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47690) Solar PV farm (solar)</td>
+                        <td class="owner">Group Y</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47691) Solar PV farm (solar)</td>
+                        <td class="owner">Group Y</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47693) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">Group Y</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47894) Offshore Windfarm (wind)</td>
+                        <td class="owner">Group Y</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47941) Solar PV farm (solar)</td>
+                        <td class="owner">Group Y</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47942) Solar PV farm (solar)</td>
+                        <td class="owner">Group Y</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47943) Solar PV farm (solar)</td>
+                        <td class="owner">Group Y</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47944) Solar PV farm (solar)</td>
+                        <td class="owner">Group Y</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47945) Offshore Windfarm (wind)</td>
+                        <td class="owner">Group Y</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47952) Solar PV farm (solar)</td>
+                        <td class="owner">Group Y</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47692) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47694) Lignite-fired Power Plant (lignite)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1000 MW</td>
+                        <td class="fixed_costs textright">90.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47695) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47696) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47698) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47701) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47702) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47703) Offshore Windfarm (wind)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47704) Offshore Windfarm (wind)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47705) Offshore Windfarm (wind)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47706) Offshore Windfarm (wind)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47707) Solar PV farm (solar)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47708) Solar PV farm (solar)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47709) Solar PV farm (solar)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47710) Solar PV farm (solar)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47711) Solar PV farm (solar)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47895) Solar PV farm (solar)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47896) Solar PV farm (solar)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47897) Solar PV farm (solar)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47898) Offshore Windfarm (wind)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47899) Offshore Windfarm (wind)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47900) Offshore Windfarm (wind)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47918) Solar PV farm (solar)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47919) Solar PV farm (solar)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47920) Solar PV farm (solar)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47921) Solar PV farm (solar)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47922) Solar PV farm (solar)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47923) Solar PV farm (solar)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47924) Solar PV farm (solar)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47925) Solar PV farm (solar)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47926) Solar PV farm (solar)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47927) Offshore Windfarm (wind)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47928) Offshore Windfarm (wind)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47929) Offshore Windfarm (wind)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47930) Offshore Windfarm (wind)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47931) Offshore Windfarm (wind)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47965) Solar PV farm (solar)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">building</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47966) Solar PV farm (solar)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">building</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47967) Solar PV farm (solar)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">building</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47968) Solar PV farm (solar)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">building</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47969) Solar PV farm (solar)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">building</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47970) Solar PV farm (solar)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">building</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47971) Solar PV farm (solar)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">building</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47972) Offshore Windfarm (wind)</td>
+                        <td class="owner">Flashboys</td>
+                        <td class="status">building</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47712) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">Riccardo_Ce</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47713) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">Riccardo_Ce</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47714) Lignite-fired Power Plant (lignite)</td>
+                        <td class="owner">Riccardo_Ce</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1000 MW</td>
+                        <td class="fixed_costs textright">90.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47715) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">Riccardo_Ce</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47716) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">Riccardo_Ce</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47717) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">Riccardo_Ce</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47718) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">Riccardo_Ce</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47719) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">Riccardo_Ce</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47720) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">Riccardo_Ce</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47721) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">Riccardo_Ce</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47722) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">Riccardo_Ce</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47723) Offshore Windfarm (wind)</td>
+                        <td class="owner">Riccardo_Ce</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47724) Offshore Windfarm (wind)</td>
+                        <td class="owner">Riccardo_Ce</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47725) Offshore Windfarm (wind)</td>
+                        <td class="owner">Riccardo_Ce</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47726) Offshore Windfarm (wind)</td>
+                        <td class="owner">Riccardo_Ce</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47727) Solar PV farm (solar)</td>
+                        <td class="owner">Riccardo_Ce</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47728) Solar PV farm (solar)</td>
+                        <td class="owner">Riccardo_Ce</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47729) Solar PV farm (solar)</td>
+                        <td class="owner">Riccardo_Ce</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47730) Solar PV farm (solar)</td>
+                        <td class="owner">Riccardo_Ce</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47731) Solar PV farm (solar)</td>
+                        <td class="owner">Riccardo_Ce</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47932) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">Riccardo_Ce</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47732) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47733) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47734) Lignite-fired Power Plant (lignite)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1000 MW</td>
+                        <td class="fixed_costs textright">90.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47735) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47736) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47737) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47738) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47739) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47740) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47741) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47742) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47743) Offshore Windfarm (wind)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47744) Offshore Windfarm (wind)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47745) Offshore Windfarm (wind)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47746) Offshore Windfarm (wind)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47747) Solar PV farm (solar)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47748) Solar PV farm (solar)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47749) Solar PV farm (solar)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47750) Solar PV farm (solar)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47751) Solar PV farm (solar)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47852) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47901) Solar PV farm (solar)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47902) Solar PV farm (solar)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47903) Offshore Windfarm (wind)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47933) Offshore Windfarm (wind)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47953) Solar PV farm (solar)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47954) Solar PV farm (solar)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47955) Solar PV farm (solar)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47956) Solar PV farm (solar)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47957) Offshore Windfarm (wind)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">building</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47973) Solar PV farm (solar)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">building</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47974) Offshore Windfarm (wind)</td>
+                        <td class="owner">GroupT</td>
+                        <td class="status">building</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47752) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">groupQ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47753) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">groupQ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47756) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">groupQ</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47757) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">groupQ</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47758) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">groupQ</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47759) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">groupQ</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47760) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">groupQ</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47761) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">groupQ</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47762) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">groupQ</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47763) Offshore Windfarm (wind)</td>
+                        <td class="owner">groupQ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47764) Offshore Windfarm (wind)</td>
+                        <td class="owner">groupQ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47765) Offshore Windfarm (wind)</td>
+                        <td class="owner">groupQ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47766) Offshore Windfarm (wind)</td>
+                        <td class="owner">groupQ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47767) Solar PV farm (solar)</td>
+                        <td class="owner">groupQ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47768) Solar PV farm (solar)</td>
+                        <td class="owner">groupQ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47769) Solar PV farm (solar)</td>
+                        <td class="owner">groupQ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47770) Solar PV farm (solar)</td>
+                        <td class="owner">groupQ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47771) Solar PV farm (solar)</td>
+                        <td class="owner">groupQ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47904) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">groupQ</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47905) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">groupQ</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47906) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">groupQ</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47907) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">groupQ</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47946) Solar PV farm (solar)</td>
+                        <td class="owner">groupQ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47947) Offshore Windfarm (wind)</td>
+                        <td class="owner">groupQ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47958) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">groupQ</td>
+                        <td class="status">building</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47772) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">teamZ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47773) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">teamZ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47774) Lignite-fired Power Plant (lignite)</td>
+                        <td class="owner">teamZ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1000 MW</td>
+                        <td class="fixed_costs textright">90.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47775) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">teamZ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47776) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">teamZ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47777) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">teamZ</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47778) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">teamZ</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47779) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">teamZ</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47780) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">teamZ</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47781) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">teamZ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47782) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">teamZ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47783) Offshore Windfarm (wind)</td>
+                        <td class="owner">teamZ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47784) Offshore Windfarm (wind)</td>
+                        <td class="owner">teamZ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47785) Offshore Windfarm (wind)</td>
+                        <td class="owner">teamZ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47786) Offshore Windfarm (wind)</td>
+                        <td class="owner">teamZ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47787) Solar PV farm (solar)</td>
+                        <td class="owner">teamZ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47788) Solar PV farm (solar)</td>
+                        <td class="owner">teamZ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47789) Solar PV farm (solar)</td>
+                        <td class="owner">teamZ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47790) Solar PV farm (solar)</td>
+                        <td class="owner">teamZ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47791) Solar PV farm (solar)</td>
+                        <td class="owner">teamZ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47815) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">teamZ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47908) Offshore Windfarm (wind)</td>
+                        <td class="owner">teamZ</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47635) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">FKrueger</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47792) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">FKrueger</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47793) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">FKrueger</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47794) Lignite-fired Power Plant (lignite)</td>
+                        <td class="owner">FKrueger</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1000 MW</td>
+                        <td class="fixed_costs textright">90.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47796) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">FKrueger</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47797) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">FKrueger</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47798) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">FKrueger</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47799) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">FKrueger</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47800) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">FKrueger</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47801) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">FKrueger</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47802) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">FKrueger</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47803) Offshore Windfarm (wind)</td>
+                        <td class="owner">FKrueger</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47804) Offshore Windfarm (wind)</td>
+                        <td class="owner">FKrueger</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47805) Offshore Windfarm (wind)</td>
+                        <td class="owner">FKrueger</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47806) Offshore Windfarm (wind)</td>
+                        <td class="owner">FKrueger</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47807) Solar PV farm (solar)</td>
+                        <td class="owner">FKrueger</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47808) Solar PV farm (solar)</td>
+                        <td class="owner">FKrueger</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47809) Solar PV farm (solar)</td>
+                        <td class="owner">FKrueger</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47810) Solar PV farm (solar)</td>
+                        <td class="owner">FKrueger</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47811) Solar PV farm (solar)</td>
+                        <td class="owner">FKrueger</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47909) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">FKrueger</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47934) Solar PV farm (solar)</td>
+                        <td class="owner">FKrueger</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47935) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">FKrueger</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47948) Solar PV farm (solar)</td>
+                        <td class="owner">FKrueger</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47975) Offshore Windfarm (wind)</td>
+                        <td class="owner">FKrueger</td>
+                        <td class="status">building</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47976) Offshore Windfarm (wind)</td>
+                        <td class="owner">FKrueger</td>
+                        <td class="status">building</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47977) Offshore Windfarm (wind)</td>
+                        <td class="owner">FKrueger</td>
+                        <td class="status">building</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47632) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">TeamAC</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47639) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">TeamAC</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47640) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">TeamAC</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47832) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">TeamAC</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47833) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">TeamAC</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47834) Lignite-fired Power Plant (lignite)</td>
+                        <td class="owner">TeamAC</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1000 MW</td>
+                        <td class="fixed_costs textright">90.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47835) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">TeamAC</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47836) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">TeamAC</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47838) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">TeamAC</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47839) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">TeamAC</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47840) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">TeamAC</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47841) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">TeamAC</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47842) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">TeamAC</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47843) Offshore Windfarm (wind)</td>
+                        <td class="owner">TeamAC</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47844) Offshore Windfarm (wind)</td>
+                        <td class="owner">TeamAC</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47845) Offshore Windfarm (wind)</td>
+                        <td class="owner">TeamAC</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47846) Offshore Windfarm (wind)</td>
+                        <td class="owner">TeamAC</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47847) Solar PV farm (solar)</td>
+                        <td class="owner">TeamAC</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47848) Solar PV farm (solar)</td>
+                        <td class="owner">TeamAC</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47849) Solar PV farm (solar)</td>
+                        <td class="owner">TeamAC</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47850) Solar PV farm (solar)</td>
+                        <td class="owner">TeamAC</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47851) Solar PV farm (solar)</td>
+                        <td class="owner">TeamAC</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47949) Solar PV farm (solar)</td>
+                        <td class="owner">TeamAC</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47979) Solar PV farm (solar)</td>
+                        <td class="owner">TeamAC</td>
+                        <td class="status">building</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47980) Solar PV farm (solar)</td>
+                        <td class="owner">TeamAC</td>
+                        <td class="status">building</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47981) Offshore Windfarm (wind)</td>
+                        <td class="owner">TeamAC</td>
+                        <td class="status">building</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47982) Offshore Windfarm (wind)</td>
+                        <td class="owner">TeamAC</td>
+                        <td class="status">building</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47677) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47699) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47700) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47754) Lignite-fired Power Plant (lignite)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1000 MW</td>
+                        <td class="fixed_costs textright">90.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47854) Lignite-fired Power Plant (lignite)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1000 MW</td>
+                        <td class="fixed_costs textright">90.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47856) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47857) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47858) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47859) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47860) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47861) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47862) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">deactivated</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47863) Offshore Windfarm (wind)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47864) Offshore Windfarm (wind)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47865) Offshore Windfarm (wind)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47866) Offshore Windfarm (wind)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47867) Solar PV farm (solar)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47868) Solar PV farm (solar)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47869) Solar PV farm (solar)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47870) Solar PV farm (solar)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47871) Solar PV farm (solar)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47910) Solar PV farm (solar)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47911) Solar PV farm (solar)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47912) Solar PV farm (solar)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47913) Solar PV farm (solar)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47914) Offshore Windfarm (wind)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47915) Offshore Windfarm (wind)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47936) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47937) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47983) Lignite-fired Power Plant (lignite)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">building</td>
+                        <td class="capacity textright">1000 MW</td>
+                        <td class="fixed_costs textright">90.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47984) Lignite-fired Power Plant (lignite)</td>
+                        <td class="owner">sarahtrial</td>
+                        <td class="status">building</td>
+                        <td class="capacity textright">1000 MW</td>
+                        <td class="fixed_costs textright">90.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47872) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">gterca</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47873) Nuclear Power Plant (uranium)</td>
+                        <td class="owner">gterca</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1400 MW</td>
+                        <td class="fixed_costs textright">74.40 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47874) Lignite-fired Power Plant (lignite)</td>
+                        <td class="owner">gterca</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">1000 MW</td>
+                        <td class="fixed_costs textright">90.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47875) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">gterca</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47876) Coal-fired Power Plant (coal)</td>
+                        <td class="owner">gterca</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">800 MW</td>
+                        <td class="fixed_costs textright">67.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47877) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">gterca</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47878) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">gterca</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47879) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">gterca</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47880) Gas Turbine Power Plant (gas)</td>
+                        <td class="owner">gterca</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">100 MW</td>
+                        <td class="fixed_costs textright">3.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47881) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">gterca</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47882) Combined Cycle Gas Turbine (gas)</td>
+                        <td class="owner">gterca</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">22.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47883) Offshore Windfarm (wind)</td>
+                        <td class="owner">gterca</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47884) Offshore Windfarm (wind)</td>
+                        <td class="owner">gterca</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47885) Offshore Windfarm (wind)</td>
+                        <td class="owner">gterca</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47886) Offshore Windfarm (wind)</td>
+                        <td class="owner">gterca</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">400 MW</td>
+                        <td class="fixed_costs textright">46.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47887) Solar PV farm (solar)</td>
+                        <td class="owner">gterca</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47888) Solar PV farm (solar)</td>
+                        <td class="owner">gterca</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47889) Solar PV farm (solar)</td>
+                        <td class="owner">gterca</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47890) Solar PV farm (solar)</td>
+                        <td class="owner">gterca</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                                    <tr>
+                        <td class="type">(47891) Solar PV farm (solar)</td>
+                        <td class="owner">gterca</td>
+                        <td class="status">active</td>
+                        <td class="capacity textright">200 MW</td>
+                        <td class="fixed_costs textright">5.00 M</td>
+                    </tr>
+                            </tbody>
+            <ul class="paginationBottom"></ul>
+        </table>
+    </div>
+	    </div>
+		<div class="col-md-3">
+	    		    	<h1>News</h1>
+	    				
+			<div class="articles">
+		    			    		<div class="article">
+		    			 
+		    				<h3>NUCLEAR SHUT DOWN -  Statistical Review of Germany’s Energy Sector in Round 6</h3>	
+								    		</div>
+		    			    		<div class="article">
+		    			 
+		    				<h3>Round 6: News - Roadmap for the Energy Revolution: Germany to Phase Out Nuclear Power by 2022</h3>	
+								    		</div>
+		    			    		<div class="article">
+		    			 
+		    				<h3>Round 6: Opinions - E.on CEO on Job Cuts: 'It Pains Me Too'</h3>	
+								    		</div>
+		    			    		<div class="article">
+		    			 
+		    				<h3>Round 6: Opinions - CEO of Energy Giant RWE: 'The Nuclear Power Chapter Has Come to an End'</h3>	
+								    		</div>
+		    			    </div>
+	    </div>
+	</div>
+
+</div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            
+        </footer>
+        </div><!-- End of body-container -->
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="//cdn.jsdelivr.net/jquery.slick/1.3.6/slick.min.js"></script>
+        <!-- Compressed Plugins -->
+        <script src="/js/handlebars.js"></script> 
+        <script src="/js/plugins.js"></script>
+        <!-- Slider -->
+        <script src="/js/slick/slick.js"></script>
+        <!-- LIST JS -->
+        <script src="/js/list.js"></script>
+        <!-- CHART JS -->
+        <script src="/js/Chart.js"></script>
+        <!-- Selectize -->
+        <script src="/js/selectize/js/standalone/selectize.min.js"></script>        
+        <!-- Pick A Date -->
+        <script src="/js/pickadate/compressed/picker.js"></script>
+        <script src="/js/pickadate/compressed/picker.date.js"></script>
+        <script src="/js/pickadate/compressed/picker.time.js"></script>
+        <script src="/js/pickadate/compressed/translations/de_DE.js"></script>
+        <!-- Custom Scripts -->
+        <script src="/js/main.js"></script>
+
+            <script>
+        var paginationBottomOptions = {
+            name: "paginationBottom",
+            paginationClass: "paginationBottom",
+            innerWindow: 5,
+            left: 3,
+            right: 4
+          };
+
+        var options = {
+            valueNames: [ 'type', 'owner', 'status', 'capacity', 'fixed_costs', 'marginal_costs' ],
+            page: 30,
+            plugins: [
+                ListPagination(paginationBottomOptions)
+            ]
+        };
+
+        var userList = new List('plants-list', options);
+    </script>    
+
+        
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>

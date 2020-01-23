@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <title>TUM - Energy Challenge</title>
+                <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="robots" content="noindex, nofollow">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/icons/style.css">
+
+        <link rel="stylesheet" href="/js/slick/slick.css">
+        <link rel="stylesheet" href="/js/selectize/css/selectize.css">
+        <link rel="stylesheet" href="/js/pickadate/compressed/themes/default.css">
+        <link rel="stylesheet" href="/js/pickadate/compressed/themes/default.date.css">
+        <link rel="stylesheet" href="/js/pickadate/compressed/themes/default.time.css">
+
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/additional-styles.css">
+        <!-- <link rel="stylesheet" href="css/styles.css"> -->
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic' rel='stylesheet' type='text/css'>
+        
+            </head>
+
+    
+            <body id="overwrite" class="logged-in">
+        <div class="user-line">
+	<div class="container">
+		<div class="admin-navigation">
+	    	<ul>
+	        		        	<!-- <li class="has-submenu">
+	        		<a class="" href="/dahboard">Datensätze</a>
+	        		<ul class="sub-menu">
+	        			<li><a class="" href="/rounds">Spielrunden</a></li>
+	        		</ul>
+	        	</li> -->
+	    		<li><a class="" href="/profil">Profile</a></li>	        	
+	        	<li>
+	        		<a href="/logout">Logout</a>
+	        	</li>
+		    </ul>
+		</div>
+		<div class="logged-in-as">
+			Logged in as: Group  X (Group X)
+		</div>
+	</div>
+</div>    
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="body-container">
+            <!-- HEADER -->
+            <header class="header">
+                <div class="container">
+                    <a href="/"><img class="logo" src="/img/logo.png" height="63" width="195" /></a>
+                    
+                    <div class="header-right">
+                                                Game: <strong>WS2019_EM1</strong><br>
+<!-- im Szenario <strong>EMI_WS2018_Nuclear Phase Out --- DO NOT DELETE - Copy of 27 - 17 players 7 - Copy of 38 - auction variant</strong><br> -->
+<small>Round 6 / 11</small>                    </div>
+                </div>
+            </header>
+
+                        <div class="navigation-line">
+    <div class="container">
+        <ul class="game-navigation">
+            <li class="has-submenu">
+                <a class="" href="/games/398/play">Dashboard</a>
+            </li>
+            <li class="has-submenu">
+                <a class="" href="/games/398/actions">Actions</a>
+                <ul class="sub-menu">
+                    <li>
+                        <a class="" href="/games/398/auctions">Buy objects</a>
+                    </li>
+                    <li>
+                        <a class="" href="/games/398/objects">Sell objects</a>
+                    </li>
+                    <li>
+                        <a class="" href="/games/398/objects">Activate / deactivate objects</a>
+                    </li>
+                    <li>
+                        <a class="" href="/games/398/loans">Get loans</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a class="" href="/games/398/balance">Financial Statements</a>
+            </li>
+            <li class="has-submenu">
+                <a class="" href="/games/398/news">News</a>
+            </li>
+            <li class="has-submenu">
+                <a class="" href="/games/398/stats">Statistics</a>
+                <ul class="sub-menu">
+                                                            <li>
+                        <a class="" href="/games/398/electricity">Electricity market</a>
+                    </li>
+                    <li>
+                        <a class="active" href="/games/398/financial">Financial market</a>
+                    </li>
+                    <li>
+                        <a class="" href="/games/398/market-plants">Power plants</a>
+                    </li>
+                    <li>
+                        <a class="" href="/games/398/ranking">Ranking & competitors</a>
+                    </li>                    
+                </ul>
+            </li>
+            <!-- <li class="has-submenu">
+                <a class="" href="/games/398/auctions">Auctions</a>
+            </li> -->
+            <!-- <li class="has-submenu">
+                <a class="" href="/games/398/stats">Statistics</a>
+            </li> -->
+            <!-- <li class="has-submenu">
+                <a class="" href="/games/398/loans">Loans</a>
+            </li> -->
+            <!-- <li class="has-submenu">
+                <a class="" href="/games/398/balance/7">Vorläufige Bilanz</a>
+            </li> -->
+        </ul>
+    </div>
+</div>
+            <div class="flash-messages-container">
+                        </div>
+
+            <section id="content-row" class="content-row">
+                <div class="container">
+                    
+	<div class="row">
+		<div class="col-md-9">
+	    	    <h1>Financial statistics</h1>
+    
+    <div class="row">
+        <div class="col-lg-6 col-md-6">
+            <h2>Development of resource prices</h2>
+
+                        
+            <p>
+                All graphs in <strong>€/unit</strong> against <strong>rounds</strong>
+            </p>
+
+            <!-- Erstellen der Diagramme -->
+                                                <h3>Resource co2</h3>
+
+                    <script>
+                                                window.material_co2 = ["13.01","13.43","16.27","14.77","21.66","12.65","16.28","17.34","9.51","4.92","6.45","7.84"];
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    window['material_' + 'co2'].splice(7, 1);
+                                                                                                                window['material_' + 'co2'].splice(7, 1);
+                                                                                                                window['material_' + 'co2'].splice(7, 1);
+                                                                                                                window['material_' + 'co2'].splice(7, 1);
+                                                                                                                window['material_' + 'co2'].splice(7, 1);
+                                                                        </script>
+
+                    <div class="sources_diagram">
+                        <canvas id="diagram_co2" width="500" height="200"></canvas>
+                    </div>
+                                                                                                                                <h3>Resource uranium</h3>
+
+                    <script>
+                                                window.material_uranium = ["85000","90000","120000","205458.91","116812","98078","136868.4","115159","95874","75817.60","77691.00","75817.60"];
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    window['material_' + 'uranium'].splice(7, 1);
+                                                                                                                window['material_' + 'uranium'].splice(7, 1);
+                                                                                                                window['material_' + 'uranium'].splice(7, 1);
+                                                                                                                window['material_' + 'uranium'].splice(7, 1);
+                                                                                                                window['material_' + 'uranium'].splice(7, 1);
+                                                                        </script>
+
+                    <div class="sources_diagram">
+                        <canvas id="diagram_uranium" width="500" height="200"></canvas>
+                    </div>
+                                                                                                                                <h3>Resource coal</h3>
+
+                    <script>
+                                                window.material_coal = ["55.36","65.02","61.76","68.24","99.87","78.81","85.33","112.47","93.02","84.03","75.16","67.9"];
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    window['material_' + 'coal'].splice(7, 1);
+                                                                                                                window['material_' + 'coal'].splice(7, 1);
+                                                                                                                window['material_' + 'coal'].splice(7, 1);
+                                                                                                                window['material_' + 'coal'].splice(7, 1);
+                                                                                                                window['material_' + 'coal'].splice(7, 1);
+                                                                        </script>
+
+                    <div class="sources_diagram">
+                        <canvas id="diagram_coal" width="500" height="200"></canvas>
+                    </div>
+                                                                <h3>Resource gas</h3>
+
+                    <script>
+                                                window.material_gas = ["4.71","4.92","5.96","5.48","8.3","5.96","6","8.09","8.28","7.8","7.53","6.09"];
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    window['material_' + 'gas'].splice(7, 1);
+                                                                                                                window['material_' + 'gas'].splice(7, 1);
+                                                                                                                window['material_' + 'gas'].splice(7, 1);
+                                                                                                                window['material_' + 'gas'].splice(7, 1);
+                                                                                                                window['material_' + 'gas'].splice(7, 1);
+                                                                        </script>
+
+                    <div class="sources_diagram">
+                        <canvas id="diagram_gas" width="500" height="200"></canvas>
+                    </div>
+                                                                <h3>Resource lignite</h3>
+
+                    <script>
+                                                window.material_lignite = ["11","12.99","11.56","10.86","11.84","11.64","10.28","10.18","11.37","12.27","10.72","9.9"];
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    window['material_' + 'lignite'].splice(7, 1);
+                                                                                                                window['material_' + 'lignite'].splice(7, 1);
+                                                                                                                window['material_' + 'lignite'].splice(7, 1);
+                                                                                                                window['material_' + 'lignite'].splice(7, 1);
+                                                                                                                window['material_' + 'lignite'].splice(7, 1);
+                                                                        </script>
+
+                    <div class="sources_diagram">
+                        <canvas id="diagram_lignite" width="500" height="200"></canvas>
+                    </div>
+                                        
+                        <script>
+                var sources = {"0":"co2","2":"uranium","4":"coal","5":"gas","6":"lignite"};
+            </script>
+        </div>
+        <div class="col-lg-6 col-md-6">
+            <h2>Yield curve & credit spread</h2>
+            
+            <h3>Yield curve</h3>
+            
+            <p>
+                Interest rates in % against maturity in years
+            </p>
+
+                        <script>
+                var yield_labels = ["1","2","3","4","5","7","10","20"];
+
+                var data_current_round = ["1.311","1.557","1.891","2.204","2.491","2.928","3.324","3.699"];
+                var data_previous_round = ["1.311","1.878","2.248","2.556","2.81","3.216","3.583","4.062"];
+            </script>
+
+            <div class="yield_diagram">
+                <canvas id="diagram_yield" width="500" height="200"></canvas>
+            </div>
+
+            <h3>Credit Spread</h3>
+            
+            <!-- ******************** -->
+            <!-- Wieder Löschen -->
+            <!-- ******************** -->
+            
+
+
+            <hr>
+            Calculation (only visible for debugging):<br>
+            
+            r_percentage = (0 + 0 + ) / (11757042648.63 + 0) = 0
+            <p>
+                Your current rating is: AAA            </p>
+
+            <hr>
+
+                        
+            <p>
+                Your current rating is: AAA            </p>
+            <table class="table-striped">
+                <thead>
+                    <tr>
+                        <th>Rating</th>
+                        <th>Interval of leverage ratio</th>
+                        <th>Credit spread</th>
+                    </tr>
+                </thead>
+                <tbody>
+                                            <tr>
+                            <td>AAA</td>
+                                                            <td>[0; 0.1]</td>
+                                                        <td>0.75 %</td>
+                        </tr>
+                                            <tr>
+                            <td>AA</td>
+                                                            <td>[0.1; 0.2]</td>
+                                                        <td>1 %</td>
+                        </tr>
+                                            <tr>
+                            <td>A</td>
+                                                            <td>[0.2; 0.3]</td>
+                                                        <td>1.37 %</td>
+                        </tr>
+                                            <tr>
+                            <td>BBB</td>
+                                                            <td>[0.3; 0.35]</td>
+                                                        <td>2.25 %</td>
+                        </tr>
+                                            <tr>
+                            <td>BB</td>
+                                                            <td>[0.35; 0.4]</td>
+                                                        <td>3.75 %</td>
+                        </tr>
+                                            <tr>
+                            <td>B</td>
+                                                            <td>[0.4; 0.5]</td>
+                                                        <td>6.5 %</td>
+                        </tr>
+                                            <tr>
+                            <td>CCC</td>
+                                                            <td>[0.5; 0.6]</td>
+                                                        <td>9 %</td>
+                        </tr>
+                                            <tr>
+                            <td>CC</td>
+                                                            <td>[0.6; 0.7]</td>
+                                                        <td>12 %</td>
+                        </tr>
+                                            <tr>
+                            <td>C</td>
+                                                            <td>[0.7; 0.8]</td>
+                                                        <td>16 %</td>
+                        </tr>
+                                            <tr>
+                            <td>D</td>
+                                                            <td>[0.8; [</td>
+                                                        <td>20 %</td>
+                        </tr>
+                                    </tbody>
+            </table>
+        </div>
+    </div>
+	    </div>
+		<div class="col-md-3">
+	    		    	<h1>News</h1>
+	    				
+			<div class="articles">
+		    			    		<div class="article">
+		    			 
+		    				<h3>NUCLEAR SHUT DOWN -  Statistical Review of Germany’s Energy Sector in Round 6</h3>	
+								    		</div>
+		    			    		<div class="article">
+		    			 
+		    				<h3>Round 6: News - Roadmap for the Energy Revolution: Germany to Phase Out Nuclear Power by 2022</h3>	
+								    		</div>
+		    			    		<div class="article">
+		    			 
+		    				<h3>Round 6: Opinions - E.on CEO on Job Cuts: 'It Pains Me Too'</h3>	
+								    		</div>
+		    			    		<div class="article">
+		    			 
+		    				<h3>Round 6: Opinions - CEO of Energy Giant RWE: 'The Nuclear Power Chapter Has Come to an End'</h3>	
+								    		</div>
+		    			    </div>
+	    </div>
+	</div>
+
+</div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            
+        </footer>
+        </div><!-- End of body-container -->
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="//cdn.jsdelivr.net/jquery.slick/1.3.6/slick.min.js"></script>
+        <!-- Compressed Plugins -->
+        <script src="/js/handlebars.js"></script> 
+        <script src="/js/plugins.js"></script>
+        <!-- Slider -->
+        <script src="/js/slick/slick.js"></script>
+        <!-- LIST JS -->
+        <script src="/js/list.js"></script>
+        <!-- CHART JS -->
+        <script src="/js/Chart.js"></script>
+        <!-- Selectize -->
+        <script src="/js/selectize/js/standalone/selectize.min.js"></script>        
+        <!-- Pick A Date -->
+        <script src="/js/pickadate/compressed/picker.js"></script>
+        <script src="/js/pickadate/compressed/picker.date.js"></script>
+        <script src="/js/pickadate/compressed/picker.time.js"></script>
+        <script src="/js/pickadate/compressed/translations/de_DE.js"></script>
+        <!-- Custom Scripts -->
+        <script src="/js/main.js"></script>
+
+            <script>
+        $(document).on('ready', function() {
+
+            var options = {
+                scaleShowGridLines : true,
+                scaleGridLineWidth : 1,
+                scaleShowHorizontalLines: true,
+                scaleShowVerticalLines: true,
+                bezierCurve : false,
+                pointDot : true,
+                pointDotRadius : 4,
+                pointDotStrokeWidth : 1,
+                pointHitDetectionRadius : 20,
+                datasetStroke : true,
+                datasetStrokeWidth : 2,
+                datasetFill : true,
+                legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+            }
+
+            /* Source Diagrams */
+            $.each(sources, function(index, source) {
+                var labels = [];
+                var dataset = {};                
+                var prices = window['material_' + source];
+
+                $.each(prices, function(i, price) {
+                    labels.push(i);
+                });
+
+                var dataset = {
+                    label: source,
+                    fillColor: "rgba(151,187,205,0.2)",
+                    strokeColor: "rgba(151,187,205,1)",
+                    pointColor: "rgba(151,187,205,1)",
+                    pointStrokeColor: "#fff",
+                    pointHighlightFill: "#fff",
+                    pointHighlightStroke: "rgba(151,187,205,1)",
+                    data: prices
+                }
+
+                window['data_' + source] = {
+                    labels: labels,
+                    datasets: [dataset]
+                }
+
+                var ctx = document.getElementById("diagram_" + source).getContext("2d");
+                var myLineChart = new Chart(ctx).Line(window['data_' + source], options);
+
+            });  
+
+            var dataset_current_round = {
+                label: "Current round",
+                fillColor: "rgba(151,187,205,0.2)",
+                strokeColor: "rgba(151,187,205,1)",
+                pointColor: "rgba(151,187,205,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(151,187,205,1)",
+                data: data_current_round
+            }
+
+            var dataset_previous_round = {
+                label: "Previous round",
+                fillColor: "rgba(151,50,205,0.2)",
+                strokeColor: "rgba(151,50,205,1)",
+                pointColor: "rgba(151,50,205,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(151,50,205,1)",
+                data: data_previous_round
+            }
+
+            /* Yield Curve Diagrams */
+            var yield_data = {
+                    labels: yield_labels,
+                    datasets: [dataset_current_round, dataset_previous_round]
+            }            
+
+            var ctx = document.getElementById("diagram_yield").getContext("2d");
+            var myLineChart = new Chart(ctx).Line(yield_data, options);
+            
+            var html = myLineChart.generateLegend();
+            $("#diagram_yield").after(html);
+
+        });
+    </script>    
+
+        
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>

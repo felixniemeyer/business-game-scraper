@@ -5,14 +5,13 @@ const cheerio = require('cheerio')
 const default_headers = require('../../default-headers.js')
 const getSessionCookieFromResponse = require('../../get-session-cookie-from-response.js') 
 
-const scrape_merit_order = require('./scrapers/merit_order.js')
-const scrape_daily_electricity_prices = require('./scrapers/daily_electricity_prices.js')
+const scrape_material_costs = require('./scrapers/material_costs.js')
 
 module.exports = {
   scrape: function(game_id, session_cookie, variables) {
     return new Promise((resolve, reject) => {
       let request_options = {
-        url: `http://tum-energy-challenge.de/games/${game_id}/electricity`,
+        url: `http://tum-energy-challenge.de/games/${game_id}/financial`,
         method: 'GET', 
         headers: {
           ...default_headers,
@@ -31,8 +30,7 @@ module.exports = {
       rp(request_options)
         .then(r => {
           let $ = cheerio.load(r.body)
-          variables['merit_order'] = scrape_merit_order($) 
-          variables['daily_electricity_prices'] = scrape_daily_electricity_prices($)
+          variables['material_costs'] = scrape_material_costs($)
           resolve(r.session_cookie)
         })
         .catch(reject)
